@@ -28,12 +28,12 @@ public final class EmailApp {
 			
 			
 			
-			System.out.print("Enter your last name: ");//NOPMD
+			System.out.print("Enter your last name: ");
 			final String lastName = scLong.nextLine();
 			
 			
 			
-			System.out.print("\nDEPARTMENT CODE\n1. for sales\n2. for Development\n3. for accounting\nEnter code: "); //NOPMD
+			System.out.print("\nDEPARTMENT CODE\n1. for sales\n2. for Development\n3. for accounting\nEnter code: ");
 			
 			
 			

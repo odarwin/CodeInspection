@@ -46,8 +46,8 @@ public class Email {
 	* metodo showInfo Oscar
 	*/
 	public void showInfo() {
-		System.out.println("\nFIRST NAME= " + M_LASTNAME + "\nLAST NAME= " + M_LASTNAME); 		
-		System.out.println("DEPARMENT= " + department + "\nEMAIL= " + emainame + "\nPASSWORD= " + password); 		
+		System.out.println("\nFIRST NAME= " + M_LASTNAME + "\nLAST NAME= " + M_LASTNAME);		
+		System.out.print("DEPARMENT= " + department + "\nEMAIL= " + emainame + "\nPASSWORD= " + password);	
 	}
 	
 	/**
