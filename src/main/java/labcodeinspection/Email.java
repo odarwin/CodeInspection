@@ -1,4 +1,5 @@
 package labcodeinspection;
+import java.util.Locale;
 /**
 *
 *
@@ -74,11 +75,11 @@ public class Email {
 	* randomPassword Oscar
 	*/
 	private String randomPassword(final int length) {
-		final String set = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890#$&@*"; //NOPMD
-		char[] password = new char[length]; //NOPMD
+		final String set = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890#$&@*";
+		char[] password = new char[length];
 		for (int i = 0; i < length; i++) {
 			final int rand = (int) (Math.random() * set.length()); 
-			password[i] = set.charAt(rand);//NOPMD
+			password[i] = set.charAt(rand);
 		}
 		return new String(password);
 	}
@@ -88,7 +89,7 @@ public class Email {
 	*/
 	public void generateEmail() {
 		Email.password = this.randomPassword(Email.PASSLEN);
-		Email.emainame = this.M_FIRSTNAME.toLowerCase() + this.M_LASTNAME.toLowerCase() + "@" + Email.department 
+		Email.emainame = this.M_FIRSTNAME.toLowerCase(Locale.getDefault()) + this.M_LASTNAME.toLowerCase(Locale.getDefault()) + "@" + Email.department 
 				+ ".espol.edu.ec";
 	}
 }
